@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sonarfuzzy"
+version = "0.1.0"
+description = "Prepare auditable SonarQube-to-RESTler fuzzing experiments"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+yaml = ["PyYAML>=6"]
+
+[project.scripts]
+sonarfuzzy = "sonarfuzzy.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]

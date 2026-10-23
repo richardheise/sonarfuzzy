@@ -1,0 +1,5 @@
+issue_key,method,path,approved,evidence
+DEMO-1,GET,/items/{itemId},yes,Fixture sintética: função getItem recebe itemId
+DEMO-2,GET,/items/{itemId},yes,Fixture sintética: mesma função recebe itemId
+DEMO-3,POST,/items,yes,Fixture sintética: função createItem recebe corpo
+DEMO-4,DELETE,/items/{itemId},yes,Issue resolvida; o planejador deve ignorá-la

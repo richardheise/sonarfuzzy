@@ -1,0 +1,28 @@
+{
+  "openapi": "3.0.3",
+  "info": {"title": "Demo sintético de inventário", "version": "1.0.0"},
+  "paths": {
+    "/items": {
+      "post": {
+        "operationId": "createItem",
+        "summary": "Cria um item de teste",
+        "requestBody": {"required": true, "content": {"application/json": {"schema": {"type": "object", "properties": {"name": {"type": "string"}}}}}},
+        "responses": {"201": {"description": "Criado"}}
+      }
+    },
+    "/items/{itemId}": {
+      "get": {
+        "operationId": "getItem",
+        "summary": "Consulta item pelo identificador",
+        "parameters": [{"name": "itemId", "in": "path", "required": true, "schema": {"type": "string"}}],
+        "responses": {"200": {"description": "Item"}}
+      },
+      "delete": {
+        "operationId": "deleteItem",
+        "summary": "Remove um item",
+        "parameters": [{"name": "itemId", "in": "path", "required": true, "schema": {"type": "string"}}],
+        "responses": {"204": {"description": "Removido"}}
+      }
+    }
+  }
+}

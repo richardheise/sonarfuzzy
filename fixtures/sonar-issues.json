@@ -1,0 +1,10 @@
+{
+  "project_key": "synthetic-demo",
+  "note": "Fixtures inventadas para testes; não são achados reais do SonarQube.",
+  "issues": [
+    {"key": "DEMO-1", "rule": "synthetic:input", "component": "synthetic-demo:items.py", "line": 21, "type": "VULNERABILITY", "severity": "CRITICAL", "status": "OPEN", "message": "Entrada de itemId alcança uma consulta sem validação"},
+    {"key": "DEMO-2", "rule": "synthetic:boundary", "component": "synthetic-demo:items.py", "line": 23, "type": "BUG", "severity": "MAJOR", "status": "OPEN", "message": "Valor de itemId pode exceder o intervalo esperado"},
+    {"key": "DEMO-3", "rule": "synthetic:body", "component": "synthetic-demo:items.py", "line": 49, "type": "BUG", "severity": "MAJOR", "status": "OPEN", "message": "Nome vazio pode chegar a uma função que exige string não vazia"},
+    {"key": "DEMO-4", "rule": "synthetic:closed", "component": "synthetic-demo:items.py", "line": 70, "type": "BUG", "severity": "MINOR", "status": "RESOLVED", "message": "Issue resolvida, fora da seleção"}
+  ]
+}

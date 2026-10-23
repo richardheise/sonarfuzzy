@@ -38,6 +38,8 @@ The fixtures are synthetic. `results/demo/plan.json` records input hashes, selec
 
 Do not fuzz production or shared services. RESTler can mutate persistent state; use disposable data and bounded time. More detail and limitations are in [the experiment protocol](docs/experiment.md).
 
+The [glossary](GLOSSARY.md) distinguishes a static finding, a reviewed link, a runtime finding and a confirmed correspondence.
+
 ## Status
 
 This is an experiment-planning prototype, not a validated vulnerability detector. Its current tests use only synthetic data and mocked HTTP responses. No SonarQube, RESTler or LLM service is started by the test suite. The MECRED pilot will use a separate, disposable local test target; no MECRED credentials or internal data belong in this repository.
